@@ -1,0 +1,42 @@
+<!-- Austin Fletcher-->
+<!-- Homework #2 - Word guess game -->
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Word Guess Game!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script type="text/javascript" src="./assets/javascript/game.js"></script>
+  <h1>Austin Fletcher's Random Word Guess!</h1>
+  <br /><br /><br />
+  <div class="gameDisplay">
+    <section class=numOfwins-class>
+      <h2>Wins: </h2>
+      <h2 id="numOfWins-id">0</h2>
+    </section>
+    <section class="currentWord-class">
+      <h2>Current Word: </h2>
+      <h2 id="currentWord-id">xxxxx</h2>
+    </section>
+    <section class=guessesRemaining-class>
+      <h2>Guesses Remaining: </h2>
+      <h2 id="guessesremaining-id">20</h2>
+    </section>
+    <section class="guessedLetters-class">
+      <h2>Letters Guessed: </h2>
+      <h2 id="guessedLetters-id"></h2>
+    </section>
+  </div>
+  <div class="gameInput">
+    <label for="letterGuessBox" name= "letterGuessName">Letter Guess:</label>
+    <input type="text" id="letterGuessBox" name="letterGuessName">
+    <input type="button" onclick="letterGuess()" value="Letter Guess">
+  </div>
+
+</body>
+</html>
